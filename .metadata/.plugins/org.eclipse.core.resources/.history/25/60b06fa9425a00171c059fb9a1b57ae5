@@ -1,0 +1,12 @@
+package com.study.Spring.test;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class com.study.Spring.config {
+	@Test
+	public void testCollect(){
+		ApplicationContext ac = new ClassPathXmlApplicationContext("In5CollectionAc.xml");
+	}
+}

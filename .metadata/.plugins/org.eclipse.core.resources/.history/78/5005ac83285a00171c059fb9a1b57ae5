@@ -1,0 +1,21 @@
+package com.study.Spring.bean;
+
+public class LifeStaticStudentProxy {
+	public LifeStaticStudentProxy(){
+		System.out.println("调用声明周期的静态代理");
+	}
+	
+	public static Student getStudentInstance(){
+		return new Student();
+	}
+	public void initStudent(){
+		
+	}
+	public void initStudent(int aa){
+		
+	}
+	public void destroySingletonStudent(){
+		
+	}
+	
+}	

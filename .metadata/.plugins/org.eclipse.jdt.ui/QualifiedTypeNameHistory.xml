@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.junit.experimental.theories.suppliers.TestedOn"/>
+<fullyQualifiedTypeName name="com.study.Spring.bean.Student"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="java.lang.Class"/>
+<fullyQualifiedTypeName name="com.study.Spring.bean.In5CollectionDataType"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="com.study.mvc.tools.DBUtil"/>
+<fullyQualifiedTypeName name="com.study.mvc.model.javabean.StudentInfo"/>
+<fullyQualifiedTypeName name="com.study.Spring.bean.LifeStaticStudentProxy"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
-<fullyQualifiedTypeName name="com.study.Spring.bean.Student"/>
+<fullyQualifiedTypeName name="com.study.mvc.model.dao.StudentDAOImp"/>
 </qualifiedTypeNameHistroy>

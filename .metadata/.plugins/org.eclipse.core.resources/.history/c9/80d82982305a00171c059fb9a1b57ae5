@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- 这里必须写为class文件，而不是写为factory-bean[这个相当于找一个依赖工厂]  -->
+	<!-- factoryMethod 相当于调用类或者对象的一个方法来常见class别名(id)为stu的对象  -->
+	<bean id="stuSign"  class="com.study.Spring.bean.LifeStaticStudentProxy" 
+				scope="singleton"
+				factory-method="getStudentInstance">
+	</bean>
+	<bean id="stuProto"  class="com.study.Spring.bean.LifeStaticStudentProxy" 
+				scope="prototype"
+				factory-method="getStudentInstance">
+	</bean>
+	<bean id="stuSignInitDestroy"  class="com.study.Spring.bean.LifeStaticStudentProxy" 
+				scope="singleton"
+				init-method="initStudent"
+				destroy-method="destroySingletonStudent"
+				factory-method="getStudentInstance">
+	</bean>
+</beans>

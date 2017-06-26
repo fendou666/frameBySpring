@@ -1,0 +1,6 @@
+package com.study.Spring.config;
+
+public class Snippet {
+	StuClass myClass
+}
+

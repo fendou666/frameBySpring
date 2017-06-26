@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="dbutil" class="com.study.mvc.tools.DBUtil">
+		<constructor-arg name="driver" value="oracle.jdbc.OracleDriver"></constructor-arg>
+		<constructor-arg name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:orcl"></constructor-arg>
+		<constructor-arg name="user" value="scott"></constructor-arg>
+		<constructor-arg name="pwd" value="tiger"></constructor-arg>
+	</bean>
+	<!-- 这里可以直接使用构造方法的, 暂时用属性初始化属性  -->
+	<bean id="DAO" class="com.study.mvc.model.dao.StudentDAOImp">
+		<constructor-arg name="driver" value="oracle.jdbc.OracleDriver"></constructor-arg>
+		<constructor-arg name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:orcl"></constructor-arg>
+		<constructor-arg name="user" value="scott"></constructor-arg>
+		<constructor-arg name="pwd" value="tiger"></constructor-arg>
+	</bean>
+</beans>

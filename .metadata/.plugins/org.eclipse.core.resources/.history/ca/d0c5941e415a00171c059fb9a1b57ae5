@@ -1,0 +1,11 @@
+package com.study.Spring.bean;
+
+import java.util.List;
+import java.util.Map;
+
+public class CollectionDataType {
+	private List list;
+	private Map map;
+	private Set set;
+	
+}
