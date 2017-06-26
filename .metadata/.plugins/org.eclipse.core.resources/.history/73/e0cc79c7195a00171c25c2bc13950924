@@ -1,0 +1,13 @@
+package com.study.Spring.test;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class SpringTest {
+	@Test
+	public void myTest(){
+		System.out.println("我是一个junit测试文件");
+		ApplicationContext ac = new ClassPathXmlApplicationContext("com/study/Spring/config/FirstApplicationContext.xml");
+	}
+}

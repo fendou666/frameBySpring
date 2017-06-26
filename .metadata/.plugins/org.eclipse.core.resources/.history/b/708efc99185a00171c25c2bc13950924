@@ -1,0 +1,6 @@
+package com.study.Spring.bean;
+
+public class Student {
+	private String name = "ÁõË§";
+	private String age = 22;
+}

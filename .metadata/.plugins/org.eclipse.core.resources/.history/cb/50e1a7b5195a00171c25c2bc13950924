@@ -1,0 +1,10 @@
+package com.study.Spring.test;
+
+import org.junit.Test;
+
+public class SpringTest {
+	@Test
+	public void myTest(){
+		System.out.println("我是一个junit测试文件");
+	}
+}

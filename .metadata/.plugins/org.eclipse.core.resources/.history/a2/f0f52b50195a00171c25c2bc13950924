@@ -1,0 +1,8 @@
+package com.study.Spring.test;
+
+import org.junit.Test;
+import org.junit.experimental.theories.suppliers.TestedOn;
+
+public class SpringTest {
+	@Test
+}

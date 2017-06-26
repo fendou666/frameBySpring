@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="stuCostomProxy" class="com.study.Spring.bean.CostomStudentProxy">
+	</bean>
+	<bean id="stuCstm" class="com.study.Spring.bean.Student">
+	</bean>
+</beans>
