@@ -1,0 +1,10 @@
+package com.study.spring.aop;
+
+import org.aopalliance.intercept.Joinpoint;
+
+public class In2BeforAop {
+	public void aopBefore(Joinpoint jnpt){
+		System.out.println("获取切入点的参数");
+		System.out.println("获取切入点的参数");
+	}
+}

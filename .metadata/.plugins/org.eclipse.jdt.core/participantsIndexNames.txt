@@ -1,0 +1,15 @@
+INDEX VERSION 1.127
+E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2112319425.index
+\EecUserInfo\src
+E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3250628232.index
+\EecUserInfo\src
+E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2075074438.index
+\MVC-JqueryJsonAjaxStruts2\src
+E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4045161313.index
+\Exam20170627\src
+E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\191088366.index
+\EecUserInfo\src
+E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2324691450.index
+\TestStuts2Json\src
+E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1140233063.index
+\EecUserInfo\src

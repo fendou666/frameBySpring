@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;aopAC.xml&apos; to &apos;SP20170627AOP/src/com.study.spring.config&apos;&#x0D;&#x0A;- Original project: &apos;SP20170627AOP&apos;&#x0D;&#x0A;- Destination element: &apos;SP20170627AOP/src/com.study.spring.config&apos;&#x0D;&#x0A;- Original element: &apos;aopAC.xml&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="/src&lt;com.study.spring.config" element1="src/aopAC.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1498536315710" units="0" version="1.0"/>
+</session>

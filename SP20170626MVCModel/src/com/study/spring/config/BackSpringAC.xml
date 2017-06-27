@@ -13,4 +13,7 @@
 	<bean id="DAO" class="com.study.mvc.model.dao.StudentDAOImp">
 		<property name="dbutil" ref="dbutil"></property>
 	</bean>
+	<bean id="service" class="com.study.mvc.model.service.StudentServiceImp">
+		<property name="studentDAO" ref="DAO"></property>
+	</bean>
 </beans>

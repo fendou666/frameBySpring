@@ -1,0 +1,8 @@
+package com.study.spring.test;
+
+public class AOPTest {
+	@Test
+	public void testAopBefore(){
+		
+	}
+}	

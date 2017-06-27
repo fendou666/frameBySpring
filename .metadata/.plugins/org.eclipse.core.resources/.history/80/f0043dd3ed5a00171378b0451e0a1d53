@@ -1,0 +1,10 @@
+package com.study.spring.test;
+
+import org.junit.Test;
+
+public class AOPTest {
+	@Test
+	public void testAopBefore(){
+		
+	}
+}	

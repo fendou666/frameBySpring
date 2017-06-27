@@ -1,0 +1,7 @@
+package com.study.spring.method;
+
+public class ClassMethod {
+	public String myMethod(String showInfo){
+		
+	}
+}

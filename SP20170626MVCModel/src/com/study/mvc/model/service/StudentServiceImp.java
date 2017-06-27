@@ -12,41 +12,43 @@ import com.study.mvc.model.javabean.StudentInfo;
 import com.study.mvc.tools.DBUtil;
 
 public class StudentServiceImp implements IStudentService {
-	IStudentDAO studentDAO = new StudentDAOImp();
+	private IStudentDAO studentDAO;
 	
+	public IStudentDAO getStudentDAO() {
+		return studentDAO;
+	}
+
+	public void setStudentDAO(IStudentDAO studentDAO) {
+		this.studentDAO = studentDAO;
+	}
+
 	@Override
 	public StudentInfo getStudentById(int id) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 	
 	@Override
 	public StudentInfo getStudentByNum(int num) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public List<StudentInfo> getStudentByName(String name) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public List<StudentInfo> getStudentBySex(String sex) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public List<StudentInfo> getStudentByAge(int start, int end) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public List<StudentInfo> getStudentBySchool(String schoolName) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -75,6 +77,5 @@ public class StudentServiceImp implements IStudentService {
 	public boolean saveStudentInfo(StudentInfo stu) {
 		return studentDAO.saveStudentInfo(stu);
 	}
-
 	
 }

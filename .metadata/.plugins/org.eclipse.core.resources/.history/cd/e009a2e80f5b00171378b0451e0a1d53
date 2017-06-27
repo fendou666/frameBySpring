@@ -1,0 +1,10 @@
+package com.exam.bean;
+
+public class PageInfo {
+	private int pageMaxRows;
+	private int currentPage;
+	private int pageMaxIndex;
+	private int allRows;
+	
+	
+}

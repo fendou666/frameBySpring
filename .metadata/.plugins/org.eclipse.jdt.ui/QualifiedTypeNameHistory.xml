@@ -2,17 +2,34 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.junit.experimental.theories.suppliers.TestedOn"/>
 <fullyQualifiedTypeName name="com.study.Spring.bean.Student"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="java.lang.Class"/>
 <fullyQualifiedTypeName name="com.study.Spring.bean.In5CollectionDataType"/>
-<fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="com.study.mvc.tools.DBUtil"/>
 <fullyQualifiedTypeName name="com.study.mvc.model.javabean.StudentInfo"/>
 <fullyQualifiedTypeName name="com.study.Spring.bean.LifeStaticStudentProxy"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
-<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="com.study.mvc.model.dao.StudentDAOImp"/>
+<fullyQualifiedTypeName name="javax.annotation.Resource"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+<fullyQualifiedTypeName name="com.studay.spring.bean.In1StudentAndClass"/>
+<fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+<fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="com.study.spring.method.ClassMethod"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.reflect.Pointcut"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.JoinPoint"/>
+<fullyQualifiedTypeName name="org.aopalliance.intercept.Joinpoint"/>
+<fullyQualifiedTypeName name="com.exam.tools.jdbc.DBUtil"/>
+<fullyQualifiedTypeName name="oracle.jdbc.oracore.OracleType"/>
+<fullyQualifiedTypeName name="oracle.jdbc.driver.OracleTypes"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.exam.bean.EMPInfo"/>
+<fullyQualifiedTypeName name="com.exam.bean.PageInfo"/>
 </qualifiedTypeNameHistroy>
