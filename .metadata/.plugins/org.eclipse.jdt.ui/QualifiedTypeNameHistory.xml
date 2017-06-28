@@ -32,4 +32,5 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.exam.bean.EMPInfo"/>
 <fullyQualifiedTypeName name="com.exam.bean.PageInfo"/>
+<fullyQualifiedTypeName name="com.study.mvc.model.javabean.PageSpliteInfo"/>
 </qualifiedTypeNameHistroy>

@@ -5,12 +5,12 @@
 <struts>
 	<constant name="struts.devMode" value="true"></constant>
 	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
-	<package name="Mytest" namespace="/" extends="struts-default, ">
+	<package name="Mytest" namespace="/" extends="struts-default, json-default">
 		<action name="TestResultAndJsonAction" class="com.chinasofti.test.action.JsonAndJspAction">
-			<result name="input"></result>
-			<result name="login"></result>
-			<result name="error"></result>
-			<result name="success"></result>
+			<result name="input">/TestJspJson.jsp</result>
+			<result name="login">/TestJspJson.jsp</result>
+			<result name="error">/TestJspJson.jsp</result>
+			<result name="success">/TestSuccess.jsp</result>
 			<result type="json">
 				<param name="root">result</param>
 			</result>

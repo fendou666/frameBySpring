@@ -10,10 +10,21 @@
 <script type="text/javascript">
 	$(function(){
 		$("#res").click(function(){
-			$("#res").text("测试Jquery成功");
+			$.post(
+				"TestResultAndJsonAction",
+				{
+					returnSign:"input"
+					/* returnSign:"input"
+					returnSign:"input"
+					returnSign:"input" */
+				},
+				function(data){
+					console.log(data);
+					$("#res").text("测试Jquery成功");
+				}
+			)
 		})
 	})
-	
 </script>
 <body>
 	<p id="res">pppppppp</p>

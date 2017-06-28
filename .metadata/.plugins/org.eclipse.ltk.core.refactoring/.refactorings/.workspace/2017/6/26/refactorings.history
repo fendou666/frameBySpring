@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ChangePageJ2EE&apos; to &apos;MysqlChangePageJ2EE&apos;" description="Rename resource &apos;ChangePageJ2EE&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/ChangePageJ2EE" name="MysqlChangePageJ2EE" stamp="1498637800936" updateReferences="true"/>
+</session>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="datasours" class="com.study.mvc.tools.DButil" scope="singleton">
+        <constructor-arg index="0" value="com.mysql.jdbc.Driver"/>
+    	<property name="url"  value="jdbc:mysql://127.0.0.1:3306/test"/>
+    	<property name="user" value="root"/>
+    	<property name="pwd"  value="123456"/>
+    </bean>
+    <bean id="pageInfo" class="com.study.mvc.model.bean.GenericPageInfo">
+    	<property name="pageSize" value="6"/>
+    	<property name="currentPageNo" value="1"/>
+    	<property name="maxPageNumbers" value="1"/>
+    </bean>
+    <bean id="stuDAO" class="com.study.mvc.model.dao.StudentDAOImp">
+    	<property name="dbutil" ref="datasours"/>
+    </bean>
+    <bean id="stuService" class="com.study.mvc.model.service.StudentServiceImp">
+    	<property name="studentDao" ref="stuDAO"/>
+    	<property name="gPageInfo" ref="pageInfo"/>
+    </bean>
+    <!-- Mvc与Spring框架连接起来了！！ -->
+    
+</beans>

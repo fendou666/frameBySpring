@@ -1,0 +1,35 @@
+package com.study.mvc.model.javabean;
+
+public class PageSpliteInfo {
+	private int pageMaxRows;
+	private int allRecodeNum;
+	private int PageMaxIndex;
+	public int getPageMaxRows() {
+		return pageMaxRows;
+	}
+	public void setPageMaxRows(int pageMaxRows) {
+		this.pageMaxRows = pageMaxRows;
+	}
+	public int getAllRecodeNum() {
+		return allRecodeNum;
+	}
+	public void setAllRecodeNum(int allRecodeNum) {
+		this.allRecodeNum = allRecodeNum;
+	}
+	public int getPageMaxIndex() {
+		return PageMaxIndex;
+	}
+	public void setPageMaxIndex(int pageMaxIndex) {
+		PageMaxIndex = pageMaxIndex;
+	}
+	public void initPageMaxIndex(){
+		if(allRecodeNum%pageMaxRows!=0){
+			PageMaxIndex = allRecodeNum/pageMaxRows + 1;
+		}else{
+			
+		}
+				
+		
+	}
+	
+}
