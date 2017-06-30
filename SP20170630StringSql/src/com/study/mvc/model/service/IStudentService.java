@@ -1,0 +1,29 @@
+package com.study.mvc.model.service;
+
+import java.util.HashMap;
+import java.util.List;
+
+import com.study.mvc.model.javabean.MyExeception;
+import com.study.mvc.model.javabean.PageSpliteInfo;
+import com.study.mvc.model.javabean.StudentInfo;
+
+public interface IStudentService {
+	// 查询
+	public StudentInfo getStudentById(int id);
+	public StudentInfo getStudentByNum(int num);
+	public List<StudentInfo> getStudentByName(String name);
+	public List<StudentInfo> getStudentBySex(String sex);
+	public List<StudentInfo> getStudentByAge(int start, int end);
+	public List<StudentInfo> getStudentBySchool(String schoolName);
+	public List<StudentInfo> getStudentByCondition(int id, String name, PageSpliteInfo pageInfo);
+	public List<StudentInfo> getStudentByCondition(int num, String name, String sex, 
+			int start, int end, String schoolName, PageSpliteInfo pageInfo);
+	
+	
+	// 增加
+	public boolean insertStudentInfo(StudentInfo stu)  throws MyExeception ;
+	// 删除
+	public boolean deleteStudentInfo(int num) throws MyExeception ;
+	// 修改
+	public boolean saveStudentInfo(StudentInfo stu) throws MyExeception ;
+}

@@ -1,0 +1,61 @@
+package com.study.mvc.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.study.mvc.model.javabean.PageSpliteInfo;
+import com.study.mvc.model.service.IStudentService;
+import com.study.mvc.model.service.StudentServiceImp;
+import com.sun.net.httpserver.HttpServer;
+
+public class TestPro extends HttpServlet {
+	private ApplicationContext ac = new ClassPathXmlApplicationContext("com/study/spring/config/BackSpringAC.xml");
+
+	public ApplicationContext getAc() {
+		return ac;
+	}
+
+	public void setAc(ApplicationContext ac) {
+		this.ac = ac;
+	}
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		doPost(req, resp);
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// ==== 编码设置
+		req.setCharacterEncoding("UTF-8");
+		resp.setCharacterEncoding("UTF-8");
+		resp.setContentType("text/html; charset=UTF-8");
+		PrintWriter out = resp.getWriter();
+		// ==== 获取参数
+		String action = req.getParameter("action");
+		// ==== 获取bean值
+		PageSpliteInfo ps = ac.getBean("pageSP", PageSpliteInfo.class);
+		IStudentService stuservice = ac.getBean("service", StudentServiceImp.class);
+		
+		int maxPage = stuservice.getMaxPageIndex();
+		if(maxPage == 0){
+			 out.write("[]");;
+		}else{
+			
+		}
+		
+	}
+	
+	
+
+}

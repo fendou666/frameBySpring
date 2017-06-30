@@ -9,6 +9,8 @@ E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\207
 \MVC-JqueryJsonAjaxStruts2\src
 E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2918245140.index
 \MysqlChangePageJ2EE\src
+E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2117323867.index
+\SP20170630StringSql\src
 E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\191088366.index
 \EecUserInfo\src
 E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1140233063.index
@@ -17,3 +19,5 @@ E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\404
 \Exam20170627\src
 E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2112319425.index
 \EecUserInfo\src
+E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2400909749.index
+\SP20170628MysqlPage\src

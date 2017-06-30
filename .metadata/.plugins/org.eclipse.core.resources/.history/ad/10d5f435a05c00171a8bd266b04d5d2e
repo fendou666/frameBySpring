@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+        
+        <bean class="com.mchange.v2.c3p0.ComboPooledDataSource" id="dataSource">
+        	<property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:orcl"/>
+			<property name="driverClass" value="oracle.jdbc.OracleDriver"/>
+			<property name="user" value="spring"/>
+			<property name="password" value="123"/>
+			<property name="initialPoolSize" value="3"/>
+			<property name="maxPoolSize" value="10"/>
+			<property name="minPoolSize" value="1"/>
+			<property name="acquireIncrement" value="3"/>
+			<property name="maxIdleTime" value="60"/>
+        </bean>
+        <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        	<property name="dataSource" ref="dataSource"></property>
+        </bean>
+        
+        
+       <!-- dao配置 -->
+        <bean id = "personDao" class="com.chinasofti.dao.PersonDaoImpl">
+        	<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+        </bean>
+        <!-- service配置 -->
+        <bean id="personService" class="com.chinasofti.service.PersonServiceImpl">
+        	<property name="personDao" ref="personDao"></property>
+        </bean>
+        
+        <bean id="personAction" class= "com.chinasofti.action.PersonAction">
+        	<property name="personService" ref="personService"></property>
+        </bean>
+    
+	
+</beans>

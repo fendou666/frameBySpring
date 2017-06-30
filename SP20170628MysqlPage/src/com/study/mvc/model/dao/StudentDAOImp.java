@@ -16,7 +16,6 @@ public class StudentDAOImp implements IStudentDAO {
 	public DBUtil getDbutil() {
 		return dbutil;
 	}
-
 	public void setDbutil(DBUtil dbutil) {
 		this.dbutil = dbutil;
 	}
@@ -56,22 +55,23 @@ public class StudentDAOImp implements IStudentDAO {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-	
 	@Override
 	public HashMap getStudentByCondition(int num, String name,
 			String sex, int start, int end, 
 			String schoolName, PageSpliteInfo pageInfo) {
-//			String sql = "SELECT id, stuNum, name, sex, age, gradeFrom FROM studentInfoA WHERE "
-//					+ "id = " + num
-//					+ " AND name = " + name
-//					+ " AND name = " + name
-//					+ " AND name = " + name
-//					+ " AND name = " + name
-//					;
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public HashMap getStudentByCondition(int id, String name,
+			PageSpliteInfo pageInfo) {
+		
 		HashMap<String, List<StudentInfo>> stuMp = null;
 		List<StudentInfo> stuList = null;
 		String sql = "SELECT id, name, age FROM firstTB ORDER BY id";
+		int pageStartIndex = (pageInfo.getCurrentPageIndex()-1)*pageInfo.getPageMaxRows();
+		sql+=" limit " + pageStartIndex + ", " + pageInfo.getPageMaxRows();
 		ResultSet rs = dbutil.queryData(sql, null);
 		if(rs!=null){
 			try {
@@ -144,6 +144,21 @@ public class StudentDAOImp implements IStudentDAO {
 		}
 	}
 
+	@Override
+	public int getMaxPageIndex() {
+		int cnt = 0;
+		String sql = "SELECT count(id) as cnt FROM firstTB ORDER BY id";
+		ResultSet rs = dbutil.queryData(sql, null);
+		if(rs!=null){
+			try {
+				if(rs.next()){
+					cnt = Integer.parseInt(rs.getString("cnt"));
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return cnt;
+	}
 	
-
 }

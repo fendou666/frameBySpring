@@ -1,0 +1,88 @@
+package com.chinasofti.dao;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.ResultSetExtractor;
+import org.springframework.jdbc.core.RowMapper;
+
+import com.chinasofti.model.Person;
+
+public class PersonDaoImpl implements PersonDao {
+	private JdbcTemplate jdbcTemplate;
+	public JdbcTemplate getJdbcTemplate() {
+		return jdbcTemplate;
+	}
+
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+
+	public void insert(Person p) {
+		this.jdbcTemplate.update("insert into person(id,name,birthday,salary) values (person_seq.nextval,?,?,?)"
+				, new Object[] {
+						p.getName(),
+						p.getBirthday(),
+						p.getSalary()
+				});
+	}
+	
+
+	@Override
+	public void update(Person p) {
+		this.getJdbcTemplate().update("UPDATE PERSON P SET P.NAME=?,P.BIRTHDAY=?,P.SALARY=? WHERE P.ID= ?",new Object[] {
+				p.getName(),
+				p.getBirthday(),
+				p.getSalary(),
+				p.getId()
+		});
+	}
+
+	@Override
+	public void delete(Person p) {
+		this.getJdbcTemplate().update("DELETE FROM PERSON WHERE PERSON.ID=?" ,new Object[] {
+			p.getId()	
+		});
+	}
+
+	@Override
+	public Person findById(int id) {
+		return this.getJdbcTemplate().query("SELECT * FROM PERSON WHERE ID= ?", new Object[] {
+				id
+		}, new ResultSetExtractor<Person>() {
+			public Person extractData(ResultSet rs) throws SQLException,
+					DataAccessException {
+				if (rs.next()) {
+					Person p = new Person();
+					p.setBirthday(rs.getDate("BIRTHDAY"));
+					p.setId(rs.getInt("ID"));
+					p.setName(rs.getString("NAME"));
+					p.setSalary(rs.getFloat("SALARY"));
+					return p;
+				}
+				return null;
+			}
+			
+		});
+	}
+
+	@Override
+	public List findAll() {
+		return this.getJdbcTemplate().query("select * from person", new RowMapper() {
+			
+			public Object mapRow(ResultSet rs, int arg1) throws SQLException {
+				Person p = new Person();
+				p.setBirthday(rs.getDate("BIRTHDAY"));
+				p.setId(rs.getInt("ID"));
+				p.setName(rs.getString("NAME"));
+				p.setSalary(rs.getFloat("SALARY"));
+				return p;
+			}
+			
+		});
+	}
+
+}

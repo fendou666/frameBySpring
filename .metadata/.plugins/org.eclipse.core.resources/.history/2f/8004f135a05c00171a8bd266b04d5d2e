@@ -1,0 +1,40 @@
+package com.chinasofti.service;
+
+import java.util.List;
+
+import com.chinasofti.dao.PersonDao;
+import com.chinasofti.model.Person;
+
+public class PersonServiceImpl implements PersonService {
+	private PersonDao personDao;
+	public PersonDao getPersonDao() {
+		return personDao;
+	}
+
+	public void setPersonDao(PersonDao personDao) {
+		this.personDao = personDao;
+	}
+
+	public void insert(Person p) {
+		personDao.insert(p);
+	}
+
+	public void update(Person p) {
+		personDao.update(p);
+
+	}
+
+	public void delete(Person p) {
+		personDao.delete(p);
+
+	}
+
+	public Person findById(int id) {
+		return personDao.findById(id);
+	}
+
+	public List findAll() {
+		return personDao.findAll();
+	}
+
+}
