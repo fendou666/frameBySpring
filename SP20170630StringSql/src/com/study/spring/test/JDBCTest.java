@@ -151,7 +151,7 @@ public class JDBCTest {
 //		System.out.println(((IStudentService)bean).insertStudentInfo(stu));
 		
 		IStudentService svc = ac.getBean("service", IStudentService.class);
-		System.out.println(svc.insertStudentInfo(stu));
+		//System.out.println(svc.insertStudentInfo(stu));
 //		StudentServiceImp svc2 = ac.getBean("service", StudentServiceImp.class);
 //		System.out.println(svc2.insertStudentInfo(stu));
 	}

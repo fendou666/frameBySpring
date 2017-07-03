@@ -1,18 +1,33 @@
 package com.study.mvc.model.dao;
 
+import java.sql.CallableStatement;
+import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
+import oracle.jdbc.driver.OracleTypes;
+
+import org.junit.Assert;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.CallableStatementCallback;
+import org.springframework.jdbc.core.CallableStatementCreator;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.SqlInOutParameter;
+import org.springframework.jdbc.core.SqlOutParameter;
+import org.springframework.jdbc.core.SqlParameter;
+import org.springframework.jdbc.core.SqlReturnResultSet;
 
+import com.study.mvc.model.javabean.Emp;
 import com.study.mvc.model.javabean.MyExeception;
 import com.study.mvc.model.javabean.PageSpliteInfo;
 import com.study.mvc.model.javabean.StudentInfo;
@@ -179,6 +194,7 @@ public class StudentDAOImp implements IStudentDAO {
 			return true;
 		}
 	}
+
 	public static void main(String[] args) throws MyExeception {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("com/study/spring/config/BackSpringAC.xml");
 		StudentDAOImp DAOBean = ac.getBean("DAO", StudentDAOImp.class);
@@ -186,9 +202,11 @@ public class StudentDAOImp implements IStudentDAO {
 		//DAOBean.getStudentByCondition(22, "ls", new PageSpliteInfo()); 
 		//DAOBean.getStudentById(1);
 		//DAOBean.insertStudentInfo(stu);
-		stu.setName("Ð¡¸Õ");
+		//stu.setName("Ð¡¸Õ");
 		//DAOBean.saveStudentInfo(stu);
-		DAOBean.deleteStudentInfo(504);
+		//DAOBean.deleteStudentInfo(504);
+		
+		
 	}
 	
 }

@@ -1,7 +1,0 @@
-package com.study.Spring.bean;
-
-public class Classes {
-	private String name;
-	private int  id;
-	
-}

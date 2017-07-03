@@ -1,7 +1,0 @@
-package com.study.Spring.test;
-
-import org.junit.Test;
-
-public class In4IOC {
-	@Test
-}
