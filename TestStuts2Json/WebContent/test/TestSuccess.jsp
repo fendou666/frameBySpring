@@ -6,7 +6,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
+<script type="text/javascript">
+	console.log("进入登陆成功页面");
+</script>
 <body>
 	登陆成功
+	<p>aaaaaaaaaaa</p>
 </body>
 </html>

@@ -12,6 +12,7 @@
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\Desktop\郭子萌"/>
 			<item value="C:\Program Files\feiq\Recv Files\MyJ2EEWK3"/>
 			<item value="C:\Program Files\feiq\Recv Files\ChangePageJ2EE"/>
 		</list>

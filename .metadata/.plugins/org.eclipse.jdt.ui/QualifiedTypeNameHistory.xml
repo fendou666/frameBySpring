@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="oracle.jdbc.oracore.OracleType"/>
-<fullyQualifiedTypeName name="com.exam.bean.EMPInfo"/>
-<fullyQualifiedTypeName name="com.exam.bean.PageInfo"/>
-<fullyQualifiedTypeName name="com.study.mvc.model.javabean.PageSpliteInfo"/>
-<fullyQualifiedTypeName name="com.study.mvc.model.service.StudentServiceImp"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="net.sf.json.JSONArray"/>
-<fullyQualifiedTypeName name="java.lang.Throwable"/>
-<fullyQualifiedTypeName name="jdk.nashorn.internal.ir.JoinPredecessor"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
@@ -28,7 +19,6 @@
 <fullyQualifiedTypeName name="com.study.mvc.model.javabean.StudentInfo"/>
 <fullyQualifiedTypeName name="com.study.mvc.model.service.IStudentService"/>
 <fullyQualifiedTypeName name="com.opensymphony.xwork2.ModelDriven"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="com.study.mvc.model.javabean.MyExeception"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.SqlReturnResultSet"/>
 <fullyQualifiedTypeName name="com.study.mvc.model.javabean.Emp"/>
@@ -45,14 +35,12 @@
 <fullyQualifiedTypeName name="java.sql.Types"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="com.study.springmvc.bean.User"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="com.study.springmvc.servlet.IController"/>
 <fullyQualifiedTypeName name="com.sun.media.sound.ModelAbstractOscillator"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.AbstractController"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping"/>
-<fullyQualifiedTypeName name="org.springframework.web.servlet.view.InternalResourceViewResolver"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.CallableStatementCreator"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.CallableStatementCallback"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
@@ -60,4 +48,16 @@
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.SqlParameter"/>
 <fullyQualifiedTypeName name="oracle.jdbc.driver.OracleTypes"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.multiaction.MultiActionController"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.multiaction.InternalPathMethodNameResolver"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.study.springmvc.bean.MyException"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.SimpleFormController"/>
+<fullyQualifiedTypeName name="com.study.springmvc.bean.User"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.view.InternalResourceViewResolver"/>
 </qualifiedTypeNameHistroy>

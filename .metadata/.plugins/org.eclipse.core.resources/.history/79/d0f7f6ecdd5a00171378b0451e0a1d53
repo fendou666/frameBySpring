@@ -1,8 +1,0 @@
-package com.studay.spring.test;
-
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-public class In1CommentTest {
-	ClassPathXmlApplicationContext cp = new ClassPathXmlApplicationContext();
-	
-}

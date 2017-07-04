@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+	<!-- Oracle连接  -->
+	<!-- 初始化连接池数据源对象 -->
+	    <bean id="Db" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+	   <property name="driverClass" value="oracle.jdbc.driver.OracleDriver"></property> 
+	    <property name="jdbcUrl" value="jdbc:oracle:thin:@175.3.13.13:1521:orcl"></property>
+	    <property name="user" value="scott"></property>
+	    <property name="password" value="tiger"></property>
+	    </bean>
+	    
+        <!-- 注入jdbcTemlate对象 -->
+	    <bean id="jdbcTemlate" class="org.springframework.jdbc.core.JdbcTemplate">
+	      <property name="dataSource" ref="Db"></property>
+	    </bean>
+	    
+	    <!-- 配置事物控制管理器 -->
+	   <!--   <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+	      <property name="dataSource" ref="Db"></property>
+	    </bean>  -->
+	    
+      <!-- 配置事物通知 -->
+	   <!--    <tx:advice id="tdAdvice" transaction-manager="transactionManager">
+	        <tx:attributes>
+	         <tx:method name="query*" isolation="DEFAULT" propagation="REQUIRED" read-only="false"/>
+	         <tx:method name="insert*" isolation="DEFAULT" propagation="REQUIRED" read-only="false"/>
+	        </tx:attributes>
+	      </tx:advice>  -->
+	      
+        <!-- 配置事物的切入点 -->
+	     <!--  <aop:config>
+	     <aop:pointcut expression="execution(* com.page.service.*.*(..))" id="txPointCut"/>
+	     <aop:advisor advice-ref="tdAdvice" pointcut-ref="txPointCut"/>
+	     </aop:config>  -->
+	      
+	      
+	     <bean id="pageControl" class="com.page.dao.PageControllor">
+	         <property name="max_cap" value="8"></property>
+	      </bean>
+	    <bean id="QueryDao" class="com.page.dao.QueryDaoImp"  scope="prototype">
+	       <property name="jdbct" ref="jdbcTemlate"></property>
+	    </bean>
+	    
+	    <bean id="QueryService" class="com.page.service.QueryServiceImp"  scope="prototype">
+	       <property name="dao" ref="QueryDao"></property>
+	       <property name="pageControl" ref="pageControl"></property>
+	    </bean> 
+	
+	<!--HandlerMapping组件-->
+	<bean name="/test.action" class="com.page.controller.TestController"></bean>
+    <bean name="/query.action" class="com.page.controller.QueryController">
+    <property name="queryService" ref="QueryService"></property>
+     <property name="pageControl" ref="pageControl"></property> 
+    </bean>
+	<!-- View解析器 -->
+<!-- 	<bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	  <property name="prefix" value="/WEB-INF/jsp/"></property>资源所在路径
+	  <property name="suffix" value=".jsp"></property>资源的后缀
+	</bean>	 -->		
+						
+</beans>

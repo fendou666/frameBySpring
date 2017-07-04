@@ -8,6 +8,7 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
 			<item value="struts.objectFactory"/>
 			<item value="service"/>
 			<item value="&quot;transcationManage&quot;"/>

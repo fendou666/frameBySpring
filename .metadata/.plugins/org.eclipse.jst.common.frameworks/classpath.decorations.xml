@@ -1,0 +1,7 @@
+<classpath>
+  <container id="SP20170704SpringMVC09Exception!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="E:/1java/frameBySpring/SP20170704SpringMVC09Exception/WebContent/WEB-INF/lib/spring-webmvc-3.2.9.RELEASE.jar">
+      <source-attachment-path>/SP20170704SpringMVC09Exception/WebContent/WEB-INF/lib/spring-webmvc-3.2.9.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

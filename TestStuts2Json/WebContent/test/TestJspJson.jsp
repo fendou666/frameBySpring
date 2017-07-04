@@ -10,6 +10,7 @@
 <script type="text/javascript">
 	$(function(){
 		$("#res").click(function(){
+			console.log("进入click");
 			$.post(
 				"TestResultAndJsonAction",
 				{

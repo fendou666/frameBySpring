@@ -1,7 +1,0 @@
-package com.exam.bean;
-
-public class EMPInfo {
-	private int  empNo;
-	private String  empName;
-	private double empSal;
-}

@@ -1,0 +1,9 @@
+package com.study.springmvc.bean;
+
+import org.springframework.web.servlet.mvc.SimpleFormController;
+
+public class SimpleFormControllerTest extends SimpleFormController {
+	
+	
+	
+}

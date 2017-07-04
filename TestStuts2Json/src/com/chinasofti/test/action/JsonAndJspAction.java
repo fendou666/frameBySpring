@@ -25,21 +25,27 @@ public class JsonAndJspAction  extends ActionSupport{
 
 	@Override
 	public String execute() throws Exception {
-		if(returnSign == "input"){
+		System.out.println("returnSign " + returnSign);
+		if(returnSign.equals("input")){
 			result= "{\"result:\":\"input\"}";
 			result= "[{\"result:\":\"input1\"}, {\"result:\":\"input2\"}, {\"result:\":\"input3\"}]";
-			return INPUT;
+			System.out.println("进入input");
+			//return SUCCESS;
+			return LOGIN;
 		}
-		if(returnSign == "LOGIN"){
+		if(returnSign.equals("login")){
+			System.out.println("进入LOGIN");
 			result= "{\"result:\":\"LOGIN\"}";
 			result= "[{\"result:\":\"LOGIN1\"}, {\"result:\":\"LOGIN2\"}, {\"result:\":\"LOGIN3\"}]";
-			return INPUT;
+			return LOGIN;
 		}
-		if(returnSign == "ERROR"){
+		if(returnSign.equals("error")){
+			System.out.println("进入ERROR");
 			result= "{\"result:\":\"ERROR\"}";
 			result= "[{\"result:\":\"ERROR1\"}, {\"result:\":\"ERROR2\"}, {\"result:\":\"ERROR3\"}]";
-			return INPUT;
+			return ERROR;
 		}
+		System.out.println("进入success");
 		result= "{\"result:\":\"SUCCESS\"}";
 		result= "[{\"result:\":\"SUCCESS1\"}, {\"result:\":\"SUCCESS2\"}, {\"result:\":\"SUCCESS3\"}]";
 		return SUCCESS;
