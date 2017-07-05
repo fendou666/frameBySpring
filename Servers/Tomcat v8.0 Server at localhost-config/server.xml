@@ -124,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="SP20170704SpringMVC08Annotation" path="/SP20170704SpringMVC08Annotation" reloadable="true" source="org.eclipse.jst.jee.server:SP20170704SpringMVC08Annotation"/><Context docBase="SP20170704SpringMVC09Exception" path="/SP20170704SpringMVC09Exception" reloadable="true" source="org.eclipse.jst.jee.server:SP20170704SpringMVC09Exception"/><Context docBase="SP20170704SpringMVC06SimpF" path="/SP20170704SpringMVC06SimpF" reloadable="true" source="org.eclipse.jst.jee.server:SP20170704SpringMVC06SimpF"/></Host>
+      <Context docBase="SP20170704SpringMVC08Annotation" path="/SP20170704SpringMVC08Annotation" reloadable="true" source="org.eclipse.jst.jee.server:SP20170704SpringMVC08Annotation"/><Context docBase="SP20170704SpringMVC09Exception" path="/SP20170704SpringMVC09Exception" reloadable="true" source="org.eclipse.jst.jee.server:SP20170704SpringMVC09Exception"/><Context docBase="SP20170704SpringMVC06SimpF" path="/SP20170704SpringMVC06SimpF" reloadable="true" source="org.eclipse.jst.jee.server:SP20170704SpringMVC06SimpF"/><Context docBase="SP20170705Intercptors" path="/SP20170705Intercptors" reloadable="true" source="org.eclipse.jst.jee.server:SP20170705Intercptors"/><Context docBase="SP20170705IOC" path="/SP20170705IOC" reloadable="true" source="org.eclipse.jst.jee.server:SP20170705IOC"/></Host>
     </Engine>
   </Service>
 </Server>

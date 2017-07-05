@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
@@ -11,8 +10,6 @@
 <fullyQualifiedTypeName name="com.mchange.v2.c3p0.ComboPooledDataSource"/>
 <fullyQualifiedTypeName name="com.chinasofti.service.PersonService"/>
 <fullyQualifiedTypeName name="org.springframework.jndi.JndiTemplate"/>
-<fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
-<fullyQualifiedTypeName name="org.springframework.jdbc.core.ResultSetExtractor"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
@@ -20,7 +17,6 @@
 <fullyQualifiedTypeName name="com.study.mvc.model.service.IStudentService"/>
 <fullyQualifiedTypeName name="com.opensymphony.xwork2.ModelDriven"/>
 <fullyQualifiedTypeName name="com.study.mvc.model.javabean.MyExeception"/>
-<fullyQualifiedTypeName name="org.springframework.jdbc.core.SqlReturnResultSet"/>
 <fullyQualifiedTypeName name="com.study.mvc.model.javabean.Emp"/>
 <fullyQualifiedTypeName name="com.sun.javafx.collections.MappingChange.Map"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
@@ -28,11 +24,8 @@
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="org.springframework.util.Assert"/>
 <fullyQualifiedTypeName name="org.junit.Assert"/>
-<fullyQualifiedTypeName name="org.springframework.jdbc.core.SqlOutParameter"/>
-<fullyQualifiedTypeName name="org.springframework.jdbc.core.SqlInOutParameter"/>
 <fullyQualifiedTypeName name="com.sun.net.httpserver.HttpServer"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
-<fullyQualifiedTypeName name="java.sql.Types"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
@@ -40,7 +33,6 @@
 <fullyQualifiedTypeName name="com.study.springmvc.servlet.IController"/>
 <fullyQualifiedTypeName name="com.sun.media.sound.ModelAbstractOscillator"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.AbstractController"/>
-<fullyQualifiedTypeName name="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.CallableStatementCreator"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.CallableStatementCallback"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
@@ -60,4 +52,12 @@
 <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.SimpleFormController"/>
 <fullyQualifiedTypeName name="com.study.springmvc.bean.User"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.view.InternalResourceViewResolver"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.simple.SimpleJdbcTemplate"/>
+<fullyQualifiedTypeName name="java.sql.Types"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.SqlOutParameter"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.SqlInOutParameter"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.SqlReturnResultSet"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.ResultSetExtractor"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
 </qualifiedTypeNameHistroy>

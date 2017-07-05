@@ -4,6 +4,7 @@ import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -18,13 +19,21 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.CallableStatementCallback;
 import org.springframework.jdbc.core.CallableStatementCreator;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.ResultSetExtractor;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.SqlInOutParameter;
+import org.springframework.jdbc.core.SqlOutParameter;
 import org.springframework.jdbc.core.SqlParameter;
+import org.springframework.jdbc.core.SqlReturnResultSet;
+import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 
 import com.study.mvc.model.dao.StudentDAOImp;
 import com.study.mvc.model.javabean.Emp;
+import com.study.mvc.model.javabean.StudentInfo;
 
 public class TestPc {
 	private JdbcTemplate jt;
+	private SimpleJdbcTemplate sjt;
 	
 	public TestPc(){
 		ApplicationContext ac = new ClassPathXmlApplicationContext("com/study/spring/config/BackSpringAC.xml");
@@ -159,7 +168,123 @@ public class TestPc {
 		}
 	}
 	
+	public void myCursorTest2(){
+		String sql = "{? = call testJT(?,?,?)}";
+		List<SqlParameter> params = new ArrayList<SqlParameter>();
+		params.add(new SqlReturnResultSet("result",  new RowMapper<Emp>() {
+				@Override
+				public Emp mapRow(ResultSet rs, int rowNum) throws SQLException {
+					System.out.println("111111");
+					Emp tmp = null;
+//					System.out.println("rs" + rs.getInt(1));
+//					tmp  = new Emp(
+//								Integer.parseInt(rs.getString("empno")),
+//								rs.getString("ename"));
+//					System.out.println("tmp " + tmp);
+					return tmp;
+				}
+			})
+		);
+		params.add(new SqlParameter(Types.INTEGER));
+		// out采用不需要注册
+		params.add(new SqlOutParameter("outInt", Types.INTEGER));
+		params.add(new SqlInOutParameter("inoutStr", Types.VARCHAR));
+		// 这里注册返回值类型
+		
+		Map<String, Object> outValues = jt.call(  
+			       new CallableStatementCreator() {  
+			            @Override  
+			            public CallableStatement createCallableStatement(Connection conn) throws SQLException {  
+			              CallableStatement cstmt = conn.prepareCall(sql);
+			              // 这里传参
+			              cstmt.registerOutParameter(1, OracleTypes.CURSOR);
+			              cstmt.setObject(2, 10);
+			              cstmt.registerOutParameter(3, OracleTypes.VARCHAR);
+			              cstmt.setObject(4, "我是传入的in out 参数");
+			              cstmt.registerOutParameter(4, OracleTypes.VARCHAR);
+			              return cstmt;  
+			    }}, params);  
+		//System.out.println(outValues.get("outInt"));
+		//System.out.println(outValues.get("inoutStr"));
+		//System.out.println(outValues.get("result"));
+		//Assert.assertEquals(4, );  
+	}
+	
+
+	
+	public void myCursorTest3(){
+		String sql = "{call testJTPro(?,?,?)}";
+		List<SqlParameter> params = new ArrayList<SqlParameter>();
+		params.add(new SqlParameter(Types.INTEGER));
+		// out采用不需要注册
+		System.out.println("Types.INTEGER:" +Types.INTEGER);
+		System.out.println("OracleTypes.NUMBER:" +OracleTypes.NUMBER);
+		params.add(new SqlOutParameter("outInt", Types.INTEGER));
+		// 这里注册返回值类型
+		params.add(new SqlInOutParameter("inoutStr", Types.VARCHAR));
+		Map<String, Object> outValues = jt.call(  
+			       new CallableStatementCreator() {  
+			            @Override  
+			            public CallableStatement createCallableStatement(Connection conn) throws SQLException {  
+			              CallableStatement cstmt = conn.prepareCall(sql);
+			              // 这里传参
+			              cstmt.setObject(1, 10);
+			              cstmt.registerOutParameter(2, OracleTypes.NUMBER);
+			              cstmt.setObject(3, "我是传入的in out 参数");
+			              cstmt.registerOutParameter(3, OracleTypes.VARCHAR);
+			              return cstmt;  
+			    }}, params);  
+		System.out.println(outValues.get("outInt"));
+		System.out.println(outValues.get("inoutStr"));
+		//System.out.println(outValues.get("result"));
+		//Assert.assertEquals(4, );  
+	}
+	
+	public void myCursorTest4(){
+		String sql = "{?=call testJT(?,?,?)}";
+		List<SqlParameter> params = new ArrayList<SqlParameter>();
+		params.add(new SqlReturnResultSet("result", new ResultSetExtractor<StudentInfo>(){
+
+			@Override
+			public StudentInfo extractData(ResultSet rs) throws SQLException,
+					DataAccessException {
+				StudentInfo tmp = null;
+				if(rs.next()){
+					System.out.println(rs.getInt(1));
+				}
+				return tmp;
+			}
+			
+		}));
+		params.add(new SqlParameter(Types.INTEGER));
+		// out采用不需要注册
+		params.add(new SqlOutParameter("outInt", Types.INTEGER));
+		// 这里注册返回值类型
+		params.add(new SqlInOutParameter("inoutStr", Types.VARCHAR));
+		
+		Map<String, Object> outValues = jt.call(  
+			       new CallableStatementCreator() {  
+			            @Override  
+			            public CallableStatement createCallableStatement(Connection conn) throws SQLException {  
+			              CallableStatement cstmt = conn.prepareCall(sql);
+			              // 这里传参
+			              cstmt.registerOutParameter(1, OracleTypes.NUMBER);
+			              cstmt.setObject(2, 10);
+			              cstmt.registerOutParameter(3, OracleTypes.NUMBER);
+			              cstmt.setObject(4, "我是传入的in out 参数");
+			              cstmt.registerOutParameter(4, OracleTypes.VARCHAR);
+			              return cstmt;  
+			    }}, params);  
+		System.out.println(outValues.get("outInt"));
+		System.out.println(outValues.get("inoutStr"));
+		//System.out.println(outValues.get("result"));
+		//Assert.assertEquals(4, );  
+	}
+	
 	public static void main(String[] args) {
-		new TestPc().myCursorTest();
+		//new TestPc().myCursorTest();
+		//new TestPc().myCursorTest2();
+		new TestPc().myCursorTest3();
+//		new TestPc().myCursorTest4();
 	}
 }

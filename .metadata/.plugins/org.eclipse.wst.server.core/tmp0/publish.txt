@@ -1,5 +1,7 @@
 #Tomcat publish data
-#Tue Jul 04 19:11:33 CST 2017
+#Wed Jul 05 17:12:25 CST 2017
 org.eclipse.jst.jee.server\:/binary\:E\:\\1java\\frameBySpring\\SP20170704SpringMVC08Annotation\\WebContent\\WEB-INF\\lib\\spring-web-3.2.9.RELEASE.jar=WEB-INF/lib/spring-web-3.2.9.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:E\:\\1java\\frameBySpring\\SP20170705IOC\\WebContent\\WEB-INF\\lib\\spring-web-3.2.9.RELEASE.jar=WEB-INF/lib/spring-web-3.2.9.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:E\:\\1java\\frameBySpring\\SP20170705Intercptors\\WebContent\\WEB-INF\\lib\\spring-web-3.2.9.RELEASE.jar=WEB-INF/lib/spring-web-3.2.9.RELEASE.jar
 org.eclipse.jst.jee.server\:/binary\:E\:\\1java\\frameBySpring\\SP20170704SpringMVC09Exception\\WebContent\\WEB-INF\\lib\\spring-web-3.2.9.RELEASE.jar=WEB-INF/lib/spring-web-3.2.9.RELEASE.jar
 org.eclipse.jst.jee.server\:/binary\:E\:\\1java\\frameBySpring\\SP20170704SpringMVC06SimpF\\WebContent\\WEB-INF\\lib\\spring-web-3.2.9.RELEASE.jar=WEB-INF/lib/spring-web-3.2.9.RELEASE.jar
