@@ -1,0 +1,14 @@
+127.0.0.1 - - [07/Jul/2017:08:48:44 +0800] "GET / HTTP/1.1" 404 957
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:08:49:25 +0800] "GET /XJXCExam1/cxtj/spyearquest.jsp HTTP/1.1" 500 2646
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:08:49:27 +0800] "GET /favicon.ico HTTP/1.1" 404 979
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:08:49:54 +0800] "GET /XJXCExam1/jcxx/gysinfo.html HTTP/1.1" 200 3345
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:08:49:54 +0800] "GET /XJXCExam1/CSS/style.css HTTP/1.1" 200 1658
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:08:50:10 +0800] "GET /XJXCExam1/jcxx/khinfo.html HTTP/1.1" 200 2966
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:08:50:10 +0800] "GET /favicon.ico HTTP/1.1" 404 979
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:08:50:25 +0800] "GET /XJXCExam1/jcxx/gyschat.jsp HTTP/1.1" 200 501
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:08:50:25 +0800] "GET /XJXCExam1/jcxx/gysquest1.jsp HTTP/1.1" 200 1875
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:08:50:25 +0800] "GET /XJXCExam1/jcxx/main.jsp HTTP/1.1" 200 117
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:08:50:25 +0800] "GET /XJXCExam1/jcxx/images/blue.jpg HTTP/1.1" 404 1017
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:08:50:25 +0800] "GET /favicon.ico HTTP/1.1" 404 979
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:08:50:42 +0800] "GET /XJXCExam1/jcxx/gysquest1.jsp HTTP/1.1" 200 1875
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:08:50:42 +0800] "GET /favicon.ico HTTP/1.1" 404 979

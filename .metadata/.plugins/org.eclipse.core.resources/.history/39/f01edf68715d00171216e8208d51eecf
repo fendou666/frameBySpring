@@ -1,5 +1,0 @@
-package com.study.mvc.controller.filter;
-
-public class CharacterFilter {
-
-}
