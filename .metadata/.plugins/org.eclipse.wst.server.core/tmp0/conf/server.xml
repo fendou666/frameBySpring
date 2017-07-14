@@ -124,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\SP20170705Intercptors" path="/SP20170705Intercptors" reloadable="true" source="org.eclipse.jst.jee.server:SP20170705Intercptors"/><Context docBase="E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\XJXCExam1" path="/XJXCExam1" reloadable="true" source="org.eclipse.jst.jee.server:XJXCExam1"/></Host>
+      <Context docBase="E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\SP20170705INew" path="/SP20170705INew" reloadable="true" source="org.eclipse.jst.jee.server:SP20170705INew"/><Context docBase="E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\SP20170705INew2" path="/SP20170705INew2" reloadable="true" source="org.eclipse.jst.jee.server:SP20170705INew2"/></Host>
     </Engine>
   </Service>
 </Server>

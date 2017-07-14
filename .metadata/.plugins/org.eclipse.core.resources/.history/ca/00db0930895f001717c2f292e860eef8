@@ -1,7 +1,0 @@
-package com.study.mvc.model.javabean;
-
-public class Emp {
-	private int empNo;
-	private String eName;
-	
-}

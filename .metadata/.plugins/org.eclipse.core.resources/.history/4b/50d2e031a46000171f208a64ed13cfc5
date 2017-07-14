@@ -1,5 +1,0 @@
-package com.study.springmvc.bean;
-
-public class SimpleFormControllerTest extends simplef {
-
-}

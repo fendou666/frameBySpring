@@ -22,13 +22,13 @@ public class AllActionServlet extends MultiActionController {
 	public  ModelAndView gotoLogin(HttpServletRequest req,
 			HttpServletResponse resp) throws Exception {
 		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("login");
+		modelAndView.setViewName("WEB-INF/jsp/login.jsp");
 		return modelAndView;
 	}
 	public  ModelAndView gotoGetUser(HttpServletRequest req,
 			HttpServletResponse resp) throws Exception {
 		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("success");
+		modelAndView.setViewName("WEB-INF/jsp/success.jsp");
 		return modelAndView;
 	}
 	

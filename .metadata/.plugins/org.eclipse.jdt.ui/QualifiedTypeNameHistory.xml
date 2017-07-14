@@ -32,7 +32,6 @@
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="com.study.springmvc.servlet.IController"/>
 <fullyQualifiedTypeName name="com.sun.media.sound.ModelAbstractOscillator"/>
-<fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.AbstractController"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.CallableStatementCreator"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.CallableStatementCallback"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.SqlReturnResultSet"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.ResultSetExtractor"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.AbstractController"/>
 </qualifiedTypeNameHistroy>
