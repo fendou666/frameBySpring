@@ -34,7 +34,6 @@ public class In1SpringTest {
 		System.out.println("student name:" + stuAcs.getName());
 		System.out.println("student age:" + stuAcs.getAge());
 		
-		
 
 		//-----------------------普通工厂---------------
 		System.out.println("-----------------------普通工厂---------------");

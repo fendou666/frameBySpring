@@ -1,0 +1,10 @@
+package com.study.Spring.bean;
+
+public class StaticStudentProxy {
+	public static Student getStudentInstance(){
+		return new Student();
+	}
+	public static Student getStudentInstance(String,String){
+		return new Student(String, int);
+	}
+}	

@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Thu Jul 13 19:49:14 CST 2017
+#Tue Jul 18 17:18:08 CST 2017
 org.eclipse.jst.jee.server\:/binary\:E\:\\1java\\frameBySpring\\SP20170705INew2\\WebContent\\WEB-INF\\lib\\spring-web-3.2.9.RELEASE.jar=WEB-INF/lib/spring-web-3.2.9.RELEASE.jar
 org.eclipse.jst.jee.server\:/binary\:E\:\\1java\\frameBySpring\\SP20170705INew\\WebContent\\WEB-INF\\lib\\spring-web-3.2.9.RELEASE.jar=WEB-INF/lib/spring-web-3.2.9.RELEASE.jar

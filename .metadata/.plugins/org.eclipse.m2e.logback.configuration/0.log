@@ -373,3 +373,118 @@ The type java.io.ObjectInputStream cannot be resolved. It is indirectly referenc
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [org.eclipse.jetty.util_8.1.14.v20131031.jar:8.1.14.v20131031]
 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
 2017-07-03 19:56:30,841 [Framework stop] INFO  o.e.j.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/wse,null}
+2017-08-03 17:10:34,029 [Worker-11] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' E:\1java\frameBySpring\AMavenSpringTest\pom.xml
+2017-08-03 17:10:39,924 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eec:AMavenSpringTest:0.0.1-SNAPSHOT @ E:\1java\frameBySpring\AMavenSpringTest\pom.xml.
+2017-08-03 17:10:52,996 [Worker-11] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AMavenSpringTest/src/main/java
+2017-08-03 17:10:52,996 [Worker-11] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /AMavenSpringTest/src/main/resources
+2017-08-03 17:10:52,996 [Worker-11] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /AMavenSpringTest/src/test/java
+2017-08-03 17:10:53,417 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eec:AMavenSpringTest:0.0.1-SNAPSHOT @ E:\1java\frameBySpring\AMavenSpringTest\pom.xml.
+2017-08-03 17:10:56,921 [Worker-11] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 22 sec
+2017-08-03 17:10:59,646 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eec:AMavenSpringTest:0.0.1-SNAPSHOT @ E:\1java\frameBySpring\AMavenSpringTest\pom.xml.
+2017-08-03 17:10:59,993 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:11:00,014 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-03 17:11:00,017 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:11:00,018 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-03 17:11:38,337 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eec:AMavenSpringTest:0.0.1-SNAPSHOT @ E:\1java\frameBySpring\AMavenSpringTest\pom.xml.
+2017-08-03 17:11:38,401 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:11:38,410 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-03 17:11:38,411 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:11:38,411 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-03 17:11:54,787 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eec:AMavenSpringTest:0.0.1-SNAPSHOT @ E:\1java\frameBySpring\AMavenSpringTest\pom.xml.
+2017-08-03 17:11:54,847 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:11:54,848 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-03 17:11:54,849 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:11:54,849 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-03 17:11:54,850 [Worker-10] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of AMavenSpringTest
+2017-08-03 17:11:54,851 [Worker-10] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for AMavenSpringTest
+2017-08-03 17:11:54,866 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:16:23,540 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eec:AMavenSpringTest:0.0.1-SNAPSHOT @ E:\1java\frameBySpring\AMavenSpringTest\pom.xml.
+2017-08-03 17:16:24,493 [Worker-14] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aliyun.com/nexus/content/groups/public/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar
+2017-08-03 17:16:24,679 [Worker-14] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aliyun.com/nexus/content/groups/public/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar
+2017-08-03 17:16:25,492 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:16:25,492 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-03 17:16:25,493 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:16:25,494 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-03 17:16:25,494 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of AMavenSpringTest
+2017-08-03 17:16:25,494 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for AMavenSpringTest
+2017-08-03 17:16:25,496 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:16:25,725 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:16:25,726 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-03 17:16:25,727 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:16:25,727 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-03 17:28:30,203 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eec:AMavenSpringTest:0.0.1-SNAPSHOT @ E:\1java\frameBySpring\AMavenSpringTest\pom.xml.
+2017-08-03 17:28:30,382 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:28:30,382 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-03 17:28:30,383 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:28:30,383 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-03 17:28:30,384 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of AMavenSpringTest
+2017-08-03 17:28:30,384 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for AMavenSpringTest
+2017-08-03 17:28:30,386 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:28:54,319 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eec:AMavenSpringTest:0.0.1-SNAPSHOT @ E:\1java\frameBySpring\AMavenSpringTest\pom.xml.
+2017-08-03 17:28:54,479 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:28:54,480 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-03 17:28:54,481 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:28:54,482 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-03 17:28:54,482 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of AMavenSpringTest
+2017-08-03 17:28:54,482 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for AMavenSpringTest
+2017-08-03 17:28:54,485 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:29:01,041 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eec:AMavenSpringTest:0.0.1-SNAPSHOT @ E:\1java\frameBySpring\AMavenSpringTest\pom.xml.
+2017-08-03 17:29:01,148 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:29:01,149 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-03 17:29:01,150 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:29:01,150 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-03 17:29:01,151 [Worker-1] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of AMavenSpringTest
+2017-08-03 17:29:01,151 [Worker-1] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for AMavenSpringTest
+2017-08-03 17:29:01,153 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:29:06,198 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eec:AMavenSpringTest:0.0.1-SNAPSHOT @ E:\1java\frameBySpring\AMavenSpringTest\pom.xml.
+2017-08-03 17:29:06,308 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:29:06,309 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-03 17:29:06,309 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:29:06,309 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-03 17:29:06,310 [Worker-13] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of AMavenSpringTest
+2017-08-03 17:29:06,310 [Worker-13] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for AMavenSpringTest
+2017-08-03 17:29:06,311 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:29:19,373 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.eec:AMavenSpringTest:0.0.1-SNAPSHOT @ E:\1java\frameBySpring\AMavenSpringTest\pom.xml.
+2017-08-03 17:29:19,461 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:29:19,462 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-03 17:29:19,464 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:29:19,465 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-03 17:29:19,466 [Worker-11] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of AMavenSpringTest
+2017-08-03 17:29:19,466 [Worker-11] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for AMavenSpringTest
+2017-08-03 17:29:19,470 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:29:20,688 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:29:20,688 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-03 17:29:20,689 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-03 17:29:20,689 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-04 08:46:31,908 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 08:46:32,057 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-04 08:46:32,059 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 08:46:32,060 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-04 09:14:48,436 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 09:14:48,504 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-04 09:14:48,506 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 09:14:48,506 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-04 09:28:20,468 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 09:28:20,477 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-04 09:28:20,483 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 09:28:20,483 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-04 09:35:38,066 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 09:35:38,075 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-04 09:35:38,077 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 09:35:38,078 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-04 14:30:28,004 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 14:30:28,211 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-04 14:30:28,213 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 14:30:28,213 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-04 15:00:41,018 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 15:00:41,044 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-04 15:00:41,066 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 15:00:41,067 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-04 15:08:25,791 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 15:08:25,799 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-04 15:08:25,802 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 15:08:25,802 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources
+2017-08-04 17:08:07,214 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 17:08:07,271 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-08-04 17:08:07,272 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-04 17:08:07,273 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\1java\frameBySpring\AMavenSpringTest\src\test\resources

@@ -87,6 +87,8 @@ E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\293
 \Spring09struts2\src
 E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2400909749.index
 \SP20170628MysqlPage\src
+E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2064464662.index
+\AMavenSpringTest\src\main\java
 E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2101755179.index
 \XJXCExam1\src
 E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\174431990.index
@@ -99,6 +101,8 @@ E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\317
 \SP20170705IOC\src
 E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4027247602.index
 \SP20170703SpringMVC02\src
+E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1393114349.index
+\SP20170630StringSql_struts2AndSpring\src
 E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2117323867.index
 \SP20170630StringSql\src
 E:\1java\frameBySpring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3874575228.index

@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<bean id="stu" class="com.study.Spring.bean.Student">
 	</bean>
-	<bean  id="stucons" class="com.study.Spring.bean.Student">
+	<bean  id="stucons"  class="com.study.Spring.bean.Student">
 		<!-- 关于String 字符串  这里直接给值不需要加引号-->
 		<!-- <constructor-arg name="name" value="小明"></constructor-arg>
 		<constructor-arg name="age" value="20"></constructor-arg> -->
