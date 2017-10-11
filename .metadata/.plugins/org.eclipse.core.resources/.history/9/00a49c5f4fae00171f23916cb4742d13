@@ -1,0 +1,15 @@
+package com.study.spring.method;
+
+import org.springframework.stereotype.Component;
+
+import com.study.spring.aop.BussAnnotation;
+
+@Component
+public class ClassMethod {
+	@BussAnnotation(moduleName="¹«Ë¾¹ÜÀí",option="É¾³ý¹«Ë¾")
+	public String myMethod(String showInfo){
+		System.out.println("ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½" + showInfo);
+		int a = 1/0;
+		return showInfo;
+	}
+}

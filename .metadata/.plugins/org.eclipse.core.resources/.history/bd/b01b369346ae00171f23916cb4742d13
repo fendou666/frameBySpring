@@ -1,0 +1,9 @@
+package com.study.spring.method;
+
+public class TestExecution {
+	
+	public void testMethod(){
+		System.out.println("我是被测试的方法");
+	}
+	
+}

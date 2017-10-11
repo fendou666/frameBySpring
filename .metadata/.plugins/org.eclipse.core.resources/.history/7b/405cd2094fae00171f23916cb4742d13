@@ -1,0 +1,20 @@
+package com.study.spring.test;
+
+
+import org.junit.Ignore;
+import org.junit.Test;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.study.spring.method.ClassMethod;
+
+public class AOPTest {
+	
+	@Test
+	public void testAopexecution(){
+		ClassPathXmlApplicationContext cp = new ClassPathXmlApplicationContext("com/study/spring/config/aopAC.xml");
+		TestExecution myObj = cp.getBean("testExecution", TestExecution.class);
+		myObj.testMethod();
+	}
+	
+	
+}	

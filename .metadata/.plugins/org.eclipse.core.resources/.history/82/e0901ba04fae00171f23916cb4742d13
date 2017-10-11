@@ -1,0 +1,106 @@
+/**
+ * Copyright www.hoomsun.com 红上金融信息服务（上海）有限公司
+ */
+package com.study.spring.aop;
+
+import java.io.PrintWriter;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.Signature;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.AfterThrowing;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.reflect.MethodSignature;
+
+
+/**
+ * 作者：Administrator <br>
+ * 创建时间：2017年10月10日 <br>
+ * 描述：
+ */
+
+@Aspect
+public class LogAspect {
+	public LogAspect() {
+		System.out.println("###create MyInterceptor");
+	}
+
+	// 声明一个切入点
+//	@Pointcut()
+//	private void anyMethod() {
+//	}
+
+//	@Before("execution(* com.study.spring.*.*.*(..))")
+	// 声明前置通知
+	public void doBefore(JoinPoint  point) throws Throwable {
+		// 拦截的实体类
+		Object target = point.getTarget();
+		// 拦截的方法名称
+		String methodName = point.getSignature().getName();
+		// 拦截的方法参数
+		Object[] args = point.getArgs();
+		Signature signature = point.getSignature();    
+		MethodSignature methodSignature = (MethodSignature)signature;    
+		Method targetMethod = methodSignature.getMethod();  
+		Method realMethod = point.getTarget().getClass().getDeclaredMethod(signature.getName(), targetMethod.getParameterTypes()); 
+	        //获取方法上注解中表明的权限    
+//	        Permission permission = (Permission)realMethod.getAnnotation(Permission.class);   
+	        BussAnnotation annotation = realMethod.getAnnotation(BussAnnotation.class);
+	        if(annotation!= null){
+	        	String moduleName = annotation.moduleName();
+	        	String option = annotation.option();
+	        	System.err.println("moduleName=="+moduleName);
+	        	System.err.println("option=="+option);
+	        	System.err.println("target=="+target);
+	        	System.err.println("methodName=="+methodName);
+	        }
+	}
+
+//	@AfterReturning(pointcut = "anyMethod()", returning = "result")
+//	// 声明后置通知
+//	public void doAfterReturning(String result) {
+//		System.out.println("后置通知");
+//		System.out.println("---" + result + "---");
+//	}
+//
+//	@AfterThrowing(pointcut = "anyMethod()", throwing = "e")
+//	// 声明例外通知
+//	public void doAfterThrowing(Exception e) {
+//		System.out.println("例外通知");
+//		System.out.println(e.getMessage());
+//	}
+//
+//	@After("anyMethod()")
+//	// 声明最终通知
+//	public void doAfter() {
+//		System.out.println("最终通知");
+//	}
+
+//	@Around("anyMethod()")
+//	// 声明环绕通知
+//	public Object doAround(ProceedingJoinPoint pjp) throws Throwable {
+//		// System.out.println("进入方法---环绕通知");
+//		// 显示调用，确保被代理的方法被调用
+//		// Object o = pjp.proceed();
+//		// System.out.println("退出方法---环绕通知");
+//		System.out.println("@Around：执行目标方法之前...");
+//		// 访问目标方法的参数：
+//		Object[] args = pjp.getArgs();
+//		// if (args != null && args.length > 0 && args[0].getClass() ==
+//		// String.class) {
+//		// args[0] = "改变后的参数1";
+//		// }
+//		// 用改变后的参数执行目标方法
+//		Object returnValue = pjp.proceed(args);
+//		System.out.println("@Around：执行目标方法之后...");
+//		System.out.println("@Around：被织入的目标对象为：" + pjp.getTarget());
+//		return "原返回值：" + returnValue + "，这是返回结果的后缀";
+//	}
+}
